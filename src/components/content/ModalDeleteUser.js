@@ -23,7 +23,7 @@ const ModalDeleteUser = (props) => {
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete the User?</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Are you sure to delete this user. email = <strong>{dataDelete && dataDelete.email ? dataDelete.email : ""}</strong></Modal.Body>
+        <Modal.Body>Are you sure to delete this user. email = <strong>{dataDelete && dataDelete.email ? dataDelete.email : ""} ?</strong></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
