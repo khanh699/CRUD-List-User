@@ -9,7 +9,7 @@ const ModalDeleteUser = (props) => {
     setShow(false);
   };
 
-  const handleSubmitUpdateUser = () => {
+  const handleSubmitDeleteUser = () => {
     let listUser  = users.listUser;
     listUser = listUser.filter(item => item.id !== dataDelete.id)
     setState({listUser: listUser});
@@ -28,7 +28,7 @@ const ModalDeleteUser = (props) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={() => handleSubmitUpdateUser()}>
+          <Button variant="primary" onClick={() => handleSubmitDeleteUser()}>
             Confirm
           </Button>
         </Modal.Footer>
